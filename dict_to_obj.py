@@ -1,3 +1,12 @@
+def dict_to_obj(value: dict = {}) -> object:  # {
+    if type(value) == dict:  # {
+        return (dicttoobj(value))
+        # }
+    else:  # {
+
+        raise TypeError('dict expected')
+
+
 def mapdicttoobj(iterable):  # {
     return list(map(dicttoobj, iterable))
 # end def mapdicttoobj
